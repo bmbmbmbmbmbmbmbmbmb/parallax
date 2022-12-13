@@ -1,0 +1,58 @@
+body, html{
+    margin:0 ;
+    padding: 0;
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 2px;
+    transform-style: preserve-3d;                                                                                                                          ;
+}
+
+.secao{
+    margin: 50px;
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    transform-style: inherit;
+}
+
+.secao::before{
+    content:" ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: translateZ(-1px)scale(1.5);
+}
+
+.conteudo{
+    position: absolute;
+    top: 25%;
+    width: 80%;
+    padding: 20px 10px;
+    background-color: rgb(164, 206, 206);
+    color: blanchedalmond;
+    font-size: 22px;
+    text-align: justify;
+    left: 58%;
+    transform: translate(-58%);
+    box-shadow: 3px 3px 3px;
+}
+.paisagem1::before{
+    background-image: url(img/paisagem1.jpg);
+}
+
+.paisagem2::before{
+    background-image:url(img/paisagem2.jfif) ;
+}
+
+.paisagem3::before{
+    background-image: url(img/paisagem3.jpg);
+}
